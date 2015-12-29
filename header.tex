@@ -1,0 +1,76 @@
+%!TEX root = doc.tex
+
+\documentclass[10pt,twocolumn,a4paper]{article}
+
+
+% Package Imports
+% ==============================
+
+% Package for Fileencoding
+\usepackage[utf8]{inputenc}
+
+% Package implementing support for special Fonts
+\usepackage[T1]{fontenc}
+
+% Packages for Fonts
+%\usepackage{helvet}
+%\usepackage[scaled]{uarial}
+
+% Remove Serifs from Font
+%\renewcommand*\familydefault{\sfdefault}
+
+% Package for german in commands, titles etc
+\usepackage[ngerman]{babel}
+
+% Package for Page Size etc.
+\usepackage{geometry}
+
+% Package for page x of y
+\usepackage{lastpage}
+
+% Package for Headers / Footers & fancy pages
+\usepackage{fancyhdr}
+
+% For correct Date format
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+
+% Makes it possible to use \theauthor etc
+\usepackage{titling}
+
+% Package for advanced mathematics
+\usepackage{amsmath}
+
+% Package for nice math arrows with text above them
+\usepackage{mathtools}
+
+% Package for equations side by side to safe space
+\usepackage{multicol}
+
+% Commands & Settings
+% ==============================
+
+% Define Date and Author
+\author{Roman Meier}
+\date{\today}
+
+% Define Page Margin
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+% IMPORTANT TO DO BEFORE ANYTHING "fancyhdr"-RELATED!
+
+% Set Pagestyle
+\pagestyle{fancy}
+
+% Set Headers and Footers
+\fancyhead[L,C,R]{} %clear headings for contents
+\fancyfoot[L,C,R]{} %clear footings for contents
+
+\fancyhead[L]{THIN1-Semesterprüfung}
+\fancyhead[C]{Spick}
+\fancyhead[R]{\thedate}
+
+\fancyfoot[L]{\theauthor}
+\fancyfoot[R]{Seite \thepage/\pageref{LastPage}}
+
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
