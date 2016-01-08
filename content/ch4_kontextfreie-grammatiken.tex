@@ -2,3 +2,25 @@
 
 \section{Kontextfreie Grammatiken}
 %\input{content/ch4_kontextfreie-grammatiken/
+
+\subsection{Kontextfreie Grammatik - Formal}
+
+\[
+G=(N,\Sigma,P,S)
+\]
+\begin{tabular}{lll}
+	\(N\)		& Alphabet der Nichtterminale		& \(N = \{a_1,a_2,...,a_m\}\)\\
+	\(\Sigma\)	& Alphabet der Terminal				& \(\Sigma = \{a_1,a_2,...,a_m\}\)\\
+	\(P\)		& endliche Menge von Produktionen	& \(X \rightarrow \beta, X \in N, \beta \in (N \cup \Sigma)*\)\\
+	\(S\)		& Startsymbol						& \(S \in N\)\\
+\end{tabular}
+
+\[
+G_1  \text{ für } \{0^n1^n|n\in \mathbb{N}\}
+\]
+\[
+G_1 = (\{A\},\{0,1\},P,A)
+\]
+\[
+P=\{A\rightarrow0A1,A\rightarrow\epsilon\}
+\]

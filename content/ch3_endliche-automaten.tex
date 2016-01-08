@@ -2,3 +2,34 @@
 
 \section{Endliche Automaten}
 %\input{content/ch3_endliche-automaten/p
+
+\subsection{Deterministischer endlicher Automat - formal}
+\[
+M = (Q, \Sigma, \delta, q_0, F)
+\]
+\begin{tabular}{lll}
+	\(Q\)		& endliche Menge von Zuständen	& \(Q=\{q_0,q_1,...,q_n\}\)\\
+	\(\Sigma\)	& Eingabealphabet				& \(\Sigma = \{a_1,a_2,...,a_m\}\)\\
+	\(\delta\)	& Übergangsfunktion				& \(\delta: Q \times \sum \rightarrow Q\)\\
+	\(q_0\)		& Startzustand					& \(q_0 \in Q\)\\
+	\(F\)		& Menge akzeptierende Zustände	& \(F \subseteq Q\) \\
+\end{tabular}
+
+\paragraph{Beispiel Übergangsfunktion}
+\[
+	\delta (q_0,a_1) = q_15
+\]
+
+\subsubsection{Berechnungsschritte}
+\[
+	(q_a,w_1w_2...w_n) \vdash_M (q_b,w_2...w_n) \vdash_M ... \vdash_M (q_e,w_j...w_n)
+\]
+Abgekürzt
+\[
+	(q_a,w1w2...w_n) \vdash_m^* (q_e,w_j...w_n)
+\]
+
+\subsubsection{Zustandsklassen}
+\[
+Klasse[q_n]  = \{w \in \Sigma* | \text(Beschreibung)\}
+\]

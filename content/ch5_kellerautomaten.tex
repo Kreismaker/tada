@@ -1,4 +1,33 @@
 %!TEX root = ../doc.tex
 
 \section{Kelleratomaten}
-\input{content/ch5_kellerautomaten/p1_deterministisch}
+%\input{content/ch5_kellerautomaten/p1_deterministisch}
+\subsection{Deterministischer Kellerautomat - Formal}
+\[
+KA = (Q, \Sigma, \Gamma,\delta, q_0, \$, F)
+\]
+\begin{tabular}{lll}
+	\(Q\)		& endliche Menge von Zuständen	& \(Q=\{q_0,q_1,...,q_n\}\)\\
+	\(\Sigma\)	& Eingabealphabet				& \(\Sigma = \{a_1,a_2,...,a_m\}\)\\
+	\(\Gamma\)	& Kelleralphabet				& \(\Gamma = \{a_1,a_2,...,a_m\}\)\\
+	\(\delta\)	& Übergangsfunktion				& \(\delta: Q \times (\Sigma \cup \epsilon) \times \Gamma \rightarrow Q \times \Gamma^*\)\\
+	\(q_0\)		& Startzustand					& \(q_0 \in Q\)\\
+	\(\$\)		& Anfangssysmbol des Kellers	& \(\$ \in \Gamma\)\\
+	\(F\)		& Menge akzeptierende Zustände	& \(F \subseteq Q\) \\
+\end{tabular}
+
+\paragraph{Beispiel Übergangsfunktion}
+\[
+	\delta (q_0,a_1,a_2) = (q_0,a_1 a_1)
+\]
+
+\subsubsection{Berechnungsschritte}
+\[
+	?
+\]
+
+\subsection{Nichtdetermininismus}
+Gleich wie deterministischer KA, aber
+\[
+\delta: Q \times (\Sigma \cup \epsilon) \times \Gamma \rightarrow \mathcal{P}(Q \times \Gamma^*)
+\]

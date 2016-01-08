@@ -1,10 +1,34 @@
 %!TEX root = ../doc.tex
 
 \section{Turingmaschinen}
-\input{content/ch6_turingmaschinen/p1_einfuehrung}
-\input{content/ch6_turingmaschinen/p2_konfiguration-berechnung}
-\input{content/ch6_turingmaschinen/p3_sprache}
-\input{content/ch6_turingmaschinen/p4_rechnen}
-\input{content/ch6_turingmaschinen/p5_erweiterungen}
-\input{content/ch6_turingmaschinen/p6_beschraenkungen}
-\input{content/ch6_turingmaschinen/p7_chomsky-hierarchie}
+%\input{content/ch6_turingmaschinen/p1_einfuehrung}
+%\input{content/ch6_turingmaschinen/p2_konfiguration-berechnung}
+%\input{content/ch6_turingmaschinen/p3_sprache}
+%\input{content/ch6_turingmaschinen/p4_rechnen}
+%\input{content/ch6_turingmaschinen/p5_erweiterungen}
+%\input{content/ch6_turingmaschinen/p6_beschraenkungen}
+%\input{content/ch6_turingmaschinen/p7_chomsky-hierarchie}
+
+\subsection{Turingmaschine - Formal}
+\[
+M=(Q,\Sigma,\Gamma,\delta,q_0,\sqcup,F)
+\]
+\begin{tabular}{lll}
+	\(Q\)		& endliche Menge von Zuständen		& \(Q=\{q_0,q_1,...,q_n\}\)\\
+	\(\Sigma\)	& Eingabealphabet					& \(\Sigma = \{a_1,a_2,...,a_m\}\)\\
+	\(\Gamma\)	& Bandalphabet						& \(\Sigma \subset \Gamma\)\\
+	\(\delta\)	& Übergangsfunktion					& \(\delta:\)\\
+	\(q_0\)		& Startzustand						& \(q_0 \in Q\)\\
+	\(\sqcup\)	& Leerzeichen						& \(\sqcup \in \Gamma \land \sqcup \notin \Sigma\)\\
+	\(F\)		& Menge der akzeptierenden Zust.	& \(F \subseteq Q\)\\
+\end{tabular}
+
+\paragraph{Übergang}
+\[
+\delta(q,X_i)=(p,Y,R)
+\]
+
+\paragraph{Berechnungsschritt}
+\[
+\text{Bandinhalt}q\text{Bandinhalt}
+\]
